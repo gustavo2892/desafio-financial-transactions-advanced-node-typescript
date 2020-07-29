@@ -33,7 +33,7 @@ class ImportTransactionsService {
         cell.trim(),
       );
 
-      if (title || type || value) return;
+      if (!title || !type || !value) return;
 
       categories.push(category);
 
